@@ -11,7 +11,7 @@ CREATE_MESH = False
 def main():
     print("Running Spatial Mapping sample ... Press 'q' to quit")
 
-    # Create a Camera object
+    # Create a Camera object ,,
     zed = sl.Camera()
 
     # Create a InitParameters object and set configuration parameters
