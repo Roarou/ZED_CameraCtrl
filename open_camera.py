@@ -18,7 +18,7 @@ def main():
     zed_serial = zed.get_camera_information().serial_number
     print("Hello! This is my serial number: {0}".format(zed_serial))
 
-    # Close the camera
+    # Close the camerattt
     zed.close()
 
 if __name__ == "__main__":
