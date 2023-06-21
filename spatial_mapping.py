@@ -52,8 +52,9 @@ def main():
     print("Extracting Point Cloud...\n")
     err = zed.extract_whole_spatial_map(py_fpc)
     print(repr(err))
-    #print("Filtering Mesh...\n")
-    #py_mesh.filter(sl.MeshFilterParameters())  # Filter the mesh (remove unnecessary vertices and faces)
+    # print("Filtering Mesh...\n")
+    # py_mesh.filter(sl.MeshFilterParameters())  # Filter the mesh (remove unnecessary vertices and faces)
+    # py_mesh.save("mesh.obj") # Save the mesh in an obj file
     print("Saving Point Cloud...\n")
     py_fpc.save("fpc.obj")
 
