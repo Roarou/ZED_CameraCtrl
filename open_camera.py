@@ -16,7 +16,7 @@ def main():
     if err != sl.ERROR_CODE.SUCCESS:
         exit(1)
 
-    # Get camera information (ZED serial number)
+    # Get camera information (ZED serial number) ....
     zed_serial = zed.get_camera_information().serial_number
     print("Hello! This is my serial number: {0}".format(zed_serial))
 
