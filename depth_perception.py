@@ -9,6 +9,8 @@ def main():
 
     # Create a InitParameters object and set configuration parameters
     init_params = sl.InitParameters()
+    init_params.set_from_svo_file(
+        "E:/Ghazi/Recordings/Recording0/Video_0.svo")
     init_params.depth_mode = sl.DEPTH_MODE.PERFORMANCE  # Use PERFORMANCE depth mode
     init_params.coordinate_units = sl.UNIT.METER  # Use meter units (for depth measurements)
     init_params.camera_resolution = sl.RESOLUTION.HD720
@@ -16,6 +18,7 @@ def main():
     # Open the camera
     err = zed.open(init_params)
     if err != sl.ERROR_CODE.SUCCESS:
+        print(err)
         exit(1)
 
     # Create and set RuntimeParameters after opening the camera
